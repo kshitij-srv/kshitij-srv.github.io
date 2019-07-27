@@ -1,0 +1,27 @@
+.stock-data-table {
+  border-collapse: collapse;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  position: absolute;
+}
+
+.stock-data-table, .stock-item, .stock-ticker, .stock-value, .stock-time {
+  box-sizing: border-box;
+  border: 1px solid black;
+  padding: 10px;
+}
+
+.header {
+  text-align: center;
+}
+
+.stock-value.increasing {
+  color: white;
+  background: green;
+}
+
+.stock-value.decreasing {
+  color: white;
+  background: red;
+}
