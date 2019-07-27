@@ -10,7 +10,5 @@
   },
   "author": "https://github.com/kshitij-srv",
   "license": "ISC",
-  "devDependencies": {
-    "qunit": "^2.9.2"
-  }
+  "devDependencies": {}
 }
