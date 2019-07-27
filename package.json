@@ -4,12 +4,15 @@
   "description": "A single page web app to display live stocks data",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
     "url": "git@personal:kshitij-srv/stocks-app.git"
   },
   "author": "https://github.com/kshitij-srv",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^24.8.0"
+  }
 }
