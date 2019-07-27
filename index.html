@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="app/css/style.css">
+    <title>Live Stocks</title>
+  </head>
+  <body>
+    <table id="stock-data-wrapper" class="stock-data-table">
+      <tr class="stock-item">
+        <td class="connect-button-wrapper header" colspan="3">
+          <button id="connect-button" class="connection-button">Start Connection</button>
+          <button id="disconnect-button" class="connection-button">End Connection</button>
+        </td>
+      </tr>
+      <tr class="stock-item">
+        <td id="connect-status" class="connect-status header" colspan="3">Disconnected</td>
+      </tr>
+      <tr class="stock-item">
+        <td class="stock-ticker header">Ticker</td>
+        <td class="stock-value header">Price</td>
+        <td class="stock-time header">Last Update</td>
+      </tr>
+    </table>
+  </body>
+</html>
+<script type="text/javascript" src="app/js/services/data-service.js"></script>
+<script type="text/javascript" src="app/js/services/socket-service.js"></script>
+<script type="text/javascript" src="app/js/utils/ui-helper.js"></script>
+<script type="text/javascript" src="app/js/utils/date-helper.js"></script>
+<script type="text/javascript" src="app/js/index.js"></script>
