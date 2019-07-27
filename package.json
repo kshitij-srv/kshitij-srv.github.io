@@ -3,9 +3,7 @@
   "version": "1.0.0",
   "description": "A single page web app to display live stocks data",
   "main": "index.js",
-  "scripts": {
-    "test": "jest"
-  },
+  "scripts": {},
   "repository": {
     "type": "git",
     "url": "git@personal:kshitij-srv/stocks-app.git"
@@ -13,6 +11,6 @@
   "author": "https://github.com/kshitij-srv",
   "license": "ISC",
   "devDependencies": {
-    "jest": "^24.8.0"
+    "qunit": "^2.9.2"
   }
 }
