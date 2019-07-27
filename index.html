@@ -9,6 +9,15 @@
   <body>
     <table id="stock-data-wrapper" class="stock-data-table">
       <tr class="stock-item">
+        <td class="connect-button-wrapper header" colspan="3">
+          <button id="connect-button" class="connection-button">Start Connection</button>
+          <button id="disconnect-button" class="connection-button">End Connection</button>
+        </td>
+      </tr>
+      <tr class="stock-item">
+        <td id="connect-status" class="connect-status header" colspan="3">Disconnected</td>
+      </tr>
+      <tr class="stock-item">
         <td class="stock-ticker header">Ticker</td>
         <td class="stock-value header">Price</td>
         <td class="stock-time header">Last Update</td>

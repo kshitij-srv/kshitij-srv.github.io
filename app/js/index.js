@@ -7,10 +7,25 @@ window.onload = function() {
     url: 'ws://stocks.mnet.website',
     onmessage: function(message) {
       dataStore.addValues(message);
+    },
+    onopen: function(event) {
+      document.getElementById('connect-status').textContent = 'Connected to: ' + event.currentTarget.url;
+    },
+    onclose: function(event) {
+      document.getElementById('connect-status').textContent = 'Connection closed';
+    },
+    onerror: function(error) {
+      throw 'WebSocket error: ' + error;
     }
   });
 
-  socket.startConnection();
+  document.getElementById('connect-button').addEventListener('click', () => {
+    socket.startConnection();
+  });
+
+  document.getElementById('disconnect-button').addEventListener('click', () => {
+    socket.closeConnection();
+  });
 
   setInterval(() => {
     var stocks = dataStore.fetchStocks();
@@ -18,8 +33,4 @@ window.onload = function() {
       uiHelper.updateStockItem(stock, info);
     });
   }, refreshInterval);
-
-  setTimeout(() => {
-    socket.closeConnection();
-  }, 360000);
 }
