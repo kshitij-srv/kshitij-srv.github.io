@@ -7,8 +7,15 @@
     <title>Live Stocks</title>
   </head>
   <body>
-    UI for live stocks goes here
+    <table id="stock-data-wrapper" style="border-collapse: collapse; border: 1px solid black;">
+      <tr style="padding: 10px; box-sizing: border-box; border: 1px solid black; ">
+        <td style="padding: 10px; text-align: center; box-sizing: border-box; border: 1px solid black; ">Ticker</td>
+        <td style="padding: 10px; text-align: center; box-sizing: border-box; border: 1px solid black; ">Price</td>
+        <td style="padding: 10px; text-align: center; box-sizing: border-box; border: 1px solid black; ">Last Update</td>
+      </tr>
+    </table>
   </body>
 </html>
+<script type="text/javascript" src="app/js/services/data-service.js"></script>
 <script type="text/javascript" src="app/js/services/socket-service.js"></script>
 <script type="text/javascript" src="app/js/index.js"></script>

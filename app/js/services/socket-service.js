@@ -41,7 +41,7 @@
   
     socket.onmessage = function(event) {
       if (typeof(socketConfig.onmessage) === 'function') {
-        socketConfig,onmessage(event);
+        socketConfig.onmessage(event.data);
       } else {
         console.log('Message: ' + event.data);
       }
