@@ -12,6 +12,18 @@
   padding: 10px;
 }
 
+.stock-ticker {
+  min-width: 80px; 
+}
+
+.stock-value {
+  min-width: 160px; 
+}
+
+.stock-time {
+  min-width: 160px; 
+}
+
 .header {
   text-align: center;
 }

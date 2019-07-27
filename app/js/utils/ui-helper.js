@@ -41,7 +41,7 @@
 
     stockTicker.textContent = stock;
     stockValue.textContent = info.value;
-    stockTime.textContent = info.time;
+    stockTime.textContent = new DateHelper().timeStamp(info.time);
 
     if (info.delta > 0) {
       stockValue.classList.remove('decreasing');
