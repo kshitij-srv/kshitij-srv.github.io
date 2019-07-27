@@ -1,4 +1,4 @@
-# kshitij-srv.github.io
+# Stocks App (kshitij-srv.github.io/stocks-app/)
 A single page web app to display live stocks data
 
 # Project Notes:
