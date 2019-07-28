@@ -10,7 +10,13 @@
   function addValue(stock) {
     var currentStock = stock[0];
     var currentStockValue = stock[1];
+
+    if (!(currentStock && currentStockValue)) {
+      throw 'Invalid stock data!';
+    }
+
     var oldStockInfo = stockValues.get(currentStock);
+
     if (!oldStockInfo) {
       stockValues.set(currentStock, {
         value: currentStockValue,
@@ -32,6 +38,10 @@
 
   DataApi.prototype.addValues = function(stockArray) {
     stockArray = deserializeData(stockArray);
+
+    if (!(stockArray instanceof Array)) {
+      throw 'Invalid message data format!';
+    }
     for (var i = 0; i < stockArray.length; i++) {
       addValue(stockArray[i]);
     }
